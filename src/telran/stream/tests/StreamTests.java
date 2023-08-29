@@ -9,6 +9,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
+import telran.stream.StreamTasks;
+
 class StreamTests {
 
 	private static final int N_GROUP_NUMBERS = 100;
@@ -69,6 +71,7 @@ class StreamTests {
 		
 	}
 	@Test
+	@Disabled
 	void displayOccurrencesTest() {
 		String [] strings = {"lmn", "ab", "lmn", "ab", "c", "a", "lmn"};
 		//lmn -> 3
@@ -76,6 +79,10 @@ class StreamTests {
 		//a -> 1
 		//c -> 1
 		displayOccurrences(strings);
+	}
+	@Test
+	void printDigitStatisticsTes() {
+		StreamTasks.printDigitStatistics();
 	}
 
 }
