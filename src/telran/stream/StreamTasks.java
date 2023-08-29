@@ -17,4 +17,8 @@ static public void printDigitStatistics() {
 	.forEach(e -> System.out.printf("%s -> %s\n", e.getKey(), e.getValue()));
 	
 }
+static public void printSportLotoNumbers() {
+	//prints random 6 unique numbers from 1 to 49 [1-49]
+	new Random().ints(1, 50).distinct().limit(6).forEach(n -> System.out.print(n + " "));
+}
 }
